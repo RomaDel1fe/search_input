@@ -28,6 +28,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
+  background: #202124;
+  height: 100vh;
 }
 
 ol, ul {
@@ -53,28 +55,57 @@ a {
   text-decoration: none;
 }
 
-html {
-  height: 100%;
-}
-
-body {
-  background: #202124;
-}
-
 .conteiner {
-  padding: 60px 8px;
+  padding: 50% 8px 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .wrap {
   max-width: 500px;
-  margin: 30px auto 0;
+  margin: 40px auto 0;
 }
 
 .title {
+  margin: 0 auto;
+  max-width: 230px;
+}
+
+.title__text {
   font-size: 60px;
   font-weight: 600;
   text-align: center;
   color: #9AA0A6;
+  width: 5.2ch;
+  -webkit-animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+          animation: typing 2s steps(22), effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #fff;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .form {

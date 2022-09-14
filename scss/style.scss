@@ -84,8 +84,13 @@
    }
 }
 
-@media (max-width:1040px) {
+@media (max-width:1080px) {
    .title__text{
       width: 6ch;
+   }
+}
+@media (max-width:400px) {
+   .conteiner{
+      transform: translateY(0);
    }
 }

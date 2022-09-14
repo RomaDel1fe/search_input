@@ -1,0 +1,151 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #202124;
+}
+
+.conteiner {
+  padding: 60px 8px;
+}
+
+.wrap {
+  max-width: 500px;
+  margin: 30px auto 0;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  color: #9AA0A6;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 44px;
+  border: 1px solid #5f6368;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.form:hover {
+  border-color: transparent;
+  background: #303134;
+  -webkit-box-shadow: 0 1px 6px 0 #171717;
+          box-shadow: 0 1px 6px 0 #171717;
+}
+
+.form__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px;
+  border: none;
+  color: #e8eaed;
+  background: transparent;
+  outline: none;
+}
+
+.form__input:hover {
+  cursor: text;
+  background: #303134;
+}
+
+.form__input:focus {
+  background: #303134;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #9AA0A6;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #9AA0A6;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #9AA0A6;
+}
+
+.form__input::placeholder {
+  color: #9AA0A6;
+}
+
+.form__btn {
+  height: 100%;
+  width: 60px;
+  background-image: url(../img/search.svg);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+}

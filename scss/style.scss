@@ -1,0 +1,64 @@
+@import "reset";
+
+.conteiner{
+   padding: 60px 8px;
+}
+.wrap{
+   max-width: 500px;
+   margin: 30px auto 0; 
+}
+.title{
+   font-size: 60px;
+   font-weight: 600;
+   text-align: center;
+   color: #9AA0A6;
+}
+
+.form{
+   display: flex;
+   height: 44px;
+   border: 1px solid #5f6368;
+   border-radius: 25px; 
+   position: relative;
+   overflow: hidden;
+   &:hover{
+      border-color: transparent;
+      background: #303134;
+      box-shadow: 0 1px 6px 0 #171717;
+   }
+   &__input{
+      flex: 1;
+      font-size: 18px;
+      font-weight: 400;
+      padding: 10px 20px;
+      border: none;
+      color: #e8eaed;
+      background: transparent;
+      outline: none;
+      &:hover{
+         cursor: text;
+         background: #303134;
+      }
+      &:focus{
+         background: #303134;
+      }
+      &::placeholder{
+         color: #9AA0A6;
+      }
+   }
+   &__btn{
+      height: 100%;
+      width: 60px;
+      background-image: url(../img/search.svg);
+      background-position: center;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      right: 0;
+      &:hover{
+         cursor: pointer;
+      }
+   }
+}
